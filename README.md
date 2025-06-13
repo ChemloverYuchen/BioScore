@@ -20,16 +20,16 @@ You can use the provided checkpoints or train your own BioScore to score any bio
 
 ### 2.1 Model Checkpoints
 
-Model checkpoints are provided in the [datasets](datasets) directory. For example, the following are commonly used for different tasks:
+Model checkpoints are provided in the [datasets](./datasets) directory. For example, the following are commonly used for different tasks:
 
-- [PLI+PPI_pretrain](datasets/PLI+PPI/PLI+PPI_pretrain) recommended for docking/screening tasks of PLI or PPI
-- [PLI_finetune](datasets/PLI+PPI/PLI_finetune) recommended for scoring/ranking tasks of PLI
-- [PPI_finetune](datasets/PLI+PPI/PPI_finetune) recommended for scoring/ranking tasks of PPI
+- [PLI+PPI_pretrain](./datasets/PLI+PPI/PLI+PPI_pretrain) recommended for docking/screening tasks of PLI or PPI
+- [PLI_finetune](./datasets/PLI+PPI/PLI_finetune) recommended for scoring/ranking tasks of PLI
+- [PPI_finetune](./datasets/PLI+PPI/PPI_finetune) recommended for scoring/ranking tasks of PPI
 
 
 ### 2.2 Inference with BioScore
 
-Refer to the scripts in [example](example) for an example of how to use the trained model for prediction.
+Refer to the scripts in [example](./example) for an example of how to use the trained model for prediction.
 
 #### Step 1: Data preprocess
 
@@ -56,7 +56,7 @@ Finally, the results will be saved in a `.jsonl` file, for example:
  
 ### 2.3 Train your own BioScore
 
-Before training, please ensure that the data has been processed into `.pkl` format as above and placed them in the correct path. Preprocessing scripts for different biological complexes are provided in [scripts/data_process](scripts/data_process) for reference.
+Before training, please ensure that the data has been processed into `.pkl` format as above and placed them in the correct path. Preprocessing scripts for different biological complexes are provided in [scripts/data_process](./scripts/data_process) for reference.
 
 ```
 # split into train/valid
@@ -81,7 +81,7 @@ The raw data used during training were primarily sourced from [PDBbind database(
 
 ### 3.2 Training configs
 
-All parameter settings for pretraining and fine-tuning are available in [scripts/exps/configs](scripts/exps/configs). We provide the following configs:
+All parameter settings for pretraining and fine-tuning are available in [scripts/exps/configs](./scripts/exps/configs). We provide the following configs:
 
 - `mix-PLI-PPI-pretrain`
 - `mix-PLI-finetune`
@@ -89,7 +89,7 @@ All parameter settings for pretraining and fine-tuning are available in [scripts
 
 ### 3.3 Evaluation
 
-Scripts for evaluation are provided in [scripts/test](scripts/test) and all evaluation datasets mentioned in the paper can be publicly accessed.
+Scripts for evaluation are provided in [scripts/test](./scripts/test) and all evaluation datasets mentioned in the paper can be publicly accessed.
 
 - `PPI Evaluation`
     - [PPI Benchmark](xxxxx) (It will be released to the public very soon)

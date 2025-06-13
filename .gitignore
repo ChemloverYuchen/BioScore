@@ -6,7 +6,6 @@ venv/
 .ipynb_checkpoints/
 .readthedocs.yaml
 .idea/
-datasets
 easy_run_1
 old
 *.pyc
