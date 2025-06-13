@@ -1,0 +1,27 @@
+{
+  "train_set": "/data1/baidu/data/BioScore_data/PLI/CSM_scoring_train_10A.pkl",
+    
+  "save_dir": "./datasets/Carbohydrate/Carbohydrate_finetune/bioscore",
+  "out_dir": "../datasets/Carbohydrate/Carbohydrate_finetune/bioscore",
+  "task": "PLI",
+  "lr": 1e-3,
+  "final_lr": 1e-3,
+  "weight_decay": 1e-5,
+  "max_epoch": 100,
+  "save_topk": 20,
+  "max_n_vertex_per_gpu": 2500,
+  "shuffle": true,
+  "patience":10,
+  "loss_type": "merge",
+  "model_type": "GET", 
+  "hidden_size": 128,
+  "radial_size": 8,
+  "edge_size": 8,
+  "n_channel": 1,
+  "n_layers": 3,
+  "n_rbf": 4,
+  "n_head": 4,
+  "k_neighbors": 9,
+  "cutoff":10,
+  "pretrain_ckpt": "./datasets/PLI+PPI/PLI+PPI_pretrain/bioscore/version_0/checkpoint/final.ckpt"
+}
