@@ -18,7 +18,7 @@ python ../inference.py \
     --test_set ./data/BioScore_data/PLI_example_10A.pkl \
     --task PLI \
     --output_type docking/screening \
-    --ckpt ../datasets/PLI+PPI/PLI_finetune/bioscore/version_0/checkpoint/final.ckpt \
+    --ckpt ../datasets/PLI+PPI/PLI+PPI_pretrain/bioscore/version_0/checkpoint/final.ckpt \
     --save_path ./results/PLI_example_docking_screening_results.jsonl \
     --batch_size 32 \
     --num_workers 4 \

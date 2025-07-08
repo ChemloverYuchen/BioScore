@@ -14,6 +14,8 @@ Set up the environment according to `environment.yml`
 conda env create -f environment.yml
 ```
 
+Also, the BioScore Conda environment has been archived using `conda-pack` and is available on [Zenodo](https://zenodo.org/records/15833668).
+
 ## 2 Usage
 
 You can use the provided checkpoints or train your own BioScore to score any biological complexes as follows.
@@ -92,7 +94,7 @@ All parameter settings for pretraining and fine-tuning are available in [scripts
 Scripts for evaluation are provided in [scripts/test](./scripts/test) and all evaluation datasets mentioned in the paper can be publicly accessed.
 
 - `PPI Evaluation`
-    - [PPI Benchmark](xxxxx) (It will be released to the public very soon)
+    - [PPI Benchmark](https://zenodo.org/records/15833668)
     - [SAbDab](https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/)
     - [pMHC](https://zenodo.org/records/8324920)
 - `PLI Evaluation`
