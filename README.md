@@ -1,6 +1,6 @@
 # BioScore
 
-This repository contains the implementation code for our research paper, [BioScore: A Foundational Scoring Function For Generalized Biomolecular Complexes]()
+This repository contains the implementation code for our research paper, [BioScore: A Foundational Scoring Function For Generalized Biomolecular Complexes](https://arxiv.org/abs/2507.10877).
 
 ## Introduction
 Here, we present BioScore—the first foundational scoring function designed to assess binding phenomenon across a broad range of biomolecular complexes. BioScore introduces innovations along three axes. (1) Representation: It departs from traditional atom/block discretizations by introducing interface-masking encoding and distance-aware edge construction, capturing dual-scale atomic and block-level features. This approach enables coarse-grained yet expressive representations applicable across molecular classes of various structural complexity. (2) Scoring Methodology: BioScore proposes a new structural assessment score that incorporates a learned statistical potential (via a mixture of density network, MDN) and a newly defined interaction-edge-aware score. (3) Training strategy: A pretraining–fine-tuning workflow (prioritize large-scale structural learning at the pre-training stage) balances performance across heterogeneous tasks, enabling plug-and-play adaptation to specific molecular systems.
@@ -113,16 +113,15 @@ Scripts for evaluation are provided in [scripts/test](./scripts/test) and all ev
 
 ## 4 Citation
 
-If you find our paper and code useful, please consider citing the [preprint](xxxxx):
+If you find our paper and code useful, please consider citing the [preprint](https://arxiv.org/abs/2507.10877):
 
 ```
-@article{xxxx,
-  title={xxxx},
-  author={xxxx},
-  journal={xxxx},
-  pages={xxxx},
-  year={xxxx},
-  publisher={xxxx}
+@article{zhu2025bioscore,
+  title        = {BioScore: A Foundational Scoring Function For Diverse Biomolecular Complexes},
+  author       = {Zhu, Yuchen and Chen, Jihong and Li, Yitong and Fang, Xiaomin and Ye, Xianbin and He, Jingzhou and Zhang, Xujun and Ge, Jingxuan and Shen, Chao and Zhang, Xiaonan and Hou, Tingjun and Hsieh, Chang‑Yu},
+  journal      = {arXiv preprint arXiv:2507.10877},
+  year         = {2025},
+  url          = {https://arxiv.org/abs/2507.10877}
 }
 ```
 
