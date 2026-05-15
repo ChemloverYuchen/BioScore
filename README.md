@@ -14,7 +14,7 @@ Set up the environment according to `environment.yml`
 conda env create -f environment.yml
 ```
 
-Also, the BioScore Conda environment has been archived using `conda-pack` and is available on [Zenodo](https://zenodo.org/records/15833668).
+Also, the BioScore Conda environment has been archived using `conda-pack` and is available on [Zenodo](https://zenodo.org/records/19379690).
 
 ## 2 Usage
 
@@ -94,7 +94,12 @@ All parameter settings for pretraining and fine-tuning are available in [scripts
 Scripts for evaluation are provided in [scripts/test](./scripts/test) and all evaluation datasets mentioned in the paper can be publicly accessed.
 
 - `PPI Evaluation`
-    - [PPI Benchmark](https://zenodo.org/records/15833668)
+    - [PPI Benchmark](https://zenodo.org/records/19379690)
+        - Includes:
+            - `coreset`
+            - `docking_decoys`
+        - `screening_decoys` is not included in the public release due to its large size (~160 GB).
+          Please contact `jihongchen1005@gmail.com` to request access.
     - [SAbDab](https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab/)
     - [pMHC](https://zenodo.org/records/8324920)
 - `PLI Evaluation`
